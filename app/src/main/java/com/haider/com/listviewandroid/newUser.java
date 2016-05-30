@@ -117,7 +117,7 @@ public class newUser extends AppCompatActivity {
                 if (db.CheckIsDataAlreadyInDBorNot(username.getText().toString())== false && name.getText().toString().length() != 0 && hometown.getText().toString().length() != 0 && username.getText().toString().length() != 0 && dob.getText().toString().length() != 0 && age.getText().toString().length() != 0 && phone.getText().toString().length() != 0 && fphone.getText().toString().length() != 0 ) {
 
 
-                    db.createUser(new User(name.getText().toString(), hometown.getText().toString(), username.getText().toString(), dob.getText().toString(), age.getText().toString(), phone.getText().toString(), fphone.getText().toString() , tv.getText().toString(), imageUser.toString() ));
+                    db.createUser(new User(name.getText().toString(), hometown.getText().toString(), username.getText().toString(), dob.getText().toString(), age.getText().toString(), phone.getText().toString(), img ,fphone.getText().toString() , tv.getText().toString() ));
 
                     db.close();
 
